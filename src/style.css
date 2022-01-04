@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .ul-li{
+      @apply uppercase px-2 hover:text-[#8cc63f]
+    }
+
+    .textMain{
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .text-active.green{
+
+    }
+  }
+
+
+#aboutDrink::after{
+    content:'';
+    display: inline-flex;
+    color: #8cc63f;
+    width: 5rem;
+    background-color: currentColor;
+    margin: 0 1rem;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.dotnav {
+    display: block;
+}
+
+.dot {
+    width:2rem;
+    height: .6rem;
+    border-radius:10%;
+    border:1px solid #8cc63f;
+    display: inline-flex;
+    margin-top: 10px;
+    cursor: pointer;
+    
+}
+.dot:hover {
+    background-color: #8cc63f;
+}
+.active {
+    background-color: #8cc63f;
+}
+
