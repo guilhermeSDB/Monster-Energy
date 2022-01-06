@@ -5,15 +5,19 @@
 
 @layer utilities {
     .ul-li{
-      @apply uppercase px-2 hover:text-[#8cc63f]
+       @apply uppercase px-2 hover:text-[#8cc63f]
+    }
+
+    .text-active{
+        @apply text-white text-xl 
+    }
+
+    .text-default{
+        @apply text-gray-100 text-lg
     }
 
     .textMain{
         font-family: 'Poppins', sans-serif;
-    }
-
-    .text-active.green{
-        
     }
   }
 
