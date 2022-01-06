@@ -443,6 +443,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-full {
   width: 100%;
 }
@@ -663,10 +667,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: flex;
   }
 
-  .lg\:h-screen {
-    height: 100vh;
-  }
-
   .lg\:h-\[40rem\] {
     height: 40rem;
   }
@@ -700,12 +700,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:pb-40 {
     padding-bottom: 10rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:pl-40 {
-    padding-left: 10rem;
   }
 }
 
