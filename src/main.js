@@ -15,6 +15,7 @@ var monsterEnergy = [
 ];
 
 
+
 $('#NamePosition').text(monsterEnergy[0][0])
 $('#DescriptPosition').text(monsterEnergy[0][1])
 $('#ImagePosition').attr('src', monsterEnergy[0][2])
@@ -30,6 +31,35 @@ $('#monsterEnergy').click( function(){
   arrayCurrent(i);  
 })
 
+function changeToActive(target){
+  $(target).removeClass('text-default')
+  $(target).addClass('text-active')
+}
+
+function changeToDefault(target){
+  $(target).addClass('text-default')
+  $(target).removeClass('text-active')
+}
+
+function setOtherDefault(){
+  $('a.ul-li').closest('main', function () {
+    const target = this.className
+    changeToDefault(target)
+  })
+}
+
+$('a.ul-li').click( function(e){
+  var target = $( e.target );
+  if($(target).hasClass('text-default') ){
+    setOtherDefault()
+    changeToActive()
+   
+  }else if ($(target).hasClass('text-active')){
+    setOtherDefault()
+    changeToDefault(target)
+    
+  }
+})
 
 $('#loCarb').click( function(){
   i = 1;
