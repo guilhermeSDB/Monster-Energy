@@ -13,7 +13,7 @@
     }
 
     .text-default{
-        @apply text-gray-100 text-lg
+        @apply text-gray-600 text-lg
     }
 
     .textMain{

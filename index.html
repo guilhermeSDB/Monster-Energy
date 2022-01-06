@@ -20,113 +20,11 @@
 
     <!-- Import Font-awesome  -->
     <script src="https://kit.fontawesome.com/ec078606de.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-
-    <style type="text/tailwindcss">
-        @layer utilities {
-                .ul-li{
-                  @apply uppercase px-2 hover:text-[#8cc63f]
-                }
-
-                .textMain{
-                    font-family: 'Poppins', sans-serif;
-                }
-
-                .text-active.green{
-
-                }
-              }
-
-
-            #aboutDrink::after{
-                content:'';
-                display: inline-flex;
-                color: #8cc63f;
-                width: 5rem;
-                background-color: currentColor;
-                margin: 0 1rem;
-                height: 5px;
-                border-radius: 5px;
-            }
-
-            .dotnav {
-                display: block;
-            }
-
-            .dot {
-                width:2rem;
-                height: .6rem;
-                border-radius:10%;
-                border:1px solid #8cc63f;
-                display: inline-flex;
-                margin-top: 10px;
-                cursor: pointer;
-
-            }
-            .dot:hover {
-                background-color: #8cc63f;
-            }
-            .active {
-                background-color: #8cc63f;
-            }
-                    @tailwind base;
-            @tailwind components;
-            @tailwind utilities;
-
-
-            @layer utilities {
-                .ul-li{
-                  @apply uppercase px-2 hover:text-[#8cc63f]
-                }
-
-                .textMain{
-                    font-family: 'Poppins', sans-serif;
-                }
-
-                .text-active.green{
-
-                }
-              }
-
-
-            #aboutDrink::after{
-                content:'';
-                display: inline-flex;
-                color: #8cc63f;
-                width: 5rem;
-                background-color: currentColor;
-                margin: 0 1rem;
-                height: 5px;
-                border-radius: 5px;
-            }
-
-            .dotnav {
-                display: block;
-            }
-
-            .dot {
-                width:2rem;
-                height: .6rem;
-                border-radius:10%;
-                border:1px solid #8cc63f;
-                display: inline-flex;
-                margin-top: 10px;
-                cursor: pointer;
-
-            }
-            .dot:hover {
-                background-color: #8cc63f;
-            }
-            .active {
-                background-color: #8cc63f;
-            }
-    </style>
     <title>Monster Energy</title>
 </head>
 
 <body>
-    <div class="w-full h-full bg-[#030303] text-white textMain">
+    <div class="w-full h-full lg:h-screen bg-[#030303] text-white textMain">
         <header class="flex justify-between px-10 lg:py-6 lg:px-20 items-center ">
             <nav class="flex items-center ">
                 <img class="pr-10 w-44"
@@ -165,17 +63,10 @@
                     </div>
                 </div>
                 <div class="hidden lg:flex content-center">
-<<<<<<< ours
-                    <div class="m-auto uppercase lg:pb-40">
-                        <p> <a id="monsterEnergy" class="ul-li text-xl" href="">Monster Energy</a>
-                            <a id="loCarb" class="ul-li text-gray-600" href="">lo-carb</a>
-                            <a id="absolutelyZero" class="ul-li text-gray-600" href="">absolutely zero</a>
-=======
                     <div id="buttonsText" class="m-auto uppercase lg:pb-40">
                         <p> <a id="monsterEnergy" class="ul-li text-active" href="">Monster Energy</a>
                             <a id="loCarb" class="ul-li text-default" href="">lo-carb</a>
                             <a id="absolutelyZero" class="ul-li text-default" href="">absolutely zero</a>
->>>>>>> theirs
                         </p>
                     </div>
                 </div>
