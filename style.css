@@ -32,6 +32,17 @@
     height: 5px;
     border-radius: 5px;
 }
+/* 
+#monsterEnergy::before{
+    content: "";
+    width: 10rem;
+    height: 3rem;
+    background-image: url(src/images/monster1-icon.png);
+    background-repeat: no-repeat;
+    background-size: 7rem;
+    display: inline-block;
+    
+} */
 
 .dotnav {
     display: block;

@@ -614,6 +614,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 5px;
 }
 
+/* 
+#monsterEnergy::before{
+    content: "";
+    width: 10rem;
+    height: 3rem;
+    background-image: url(src/images/monster1-icon.png);
+    background-repeat: no-repeat;
+    background-size: 7rem;
+    display: inline-block;
+    
+} */
+
 .dotnav {
   display: block;
 }
@@ -651,12 +663,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: flex;
   }
 
-  .lg\:h-\[40rem\] {
-    height: 40rem;
-  }
-
   .lg\:h-screen {
     height: 100vh;
+  }
+
+  .lg\:h-\[40rem\] {
+    height: 40rem;
   }
 
   .lg\:w-\[20rem\] {
@@ -682,12 +694,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 0px;
   }
 
-  .lg\:pl-40 {
-    padding-left: 10rem;
+  .lg\:pl-20 {
+    padding-left: 5rem;
   }
 
   .lg\:pb-40 {
     padding-bottom: 10rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:pl-40 {
+    padding-left: 10rem;
   }
 }
 

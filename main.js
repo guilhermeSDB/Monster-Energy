@@ -41,22 +41,24 @@ function changeToDefault(target){
   $(target).removeClass('text-active')
 }
 
-function setOtherDefault(){
-  $('a.ul-li').closest('main', function () {
-    const target = this.className
-    changeToDefault(target)
-  })
+function setOthersDefault(){
+    $('a.ul-li').addClass('text-default')
+    $('a.ul-li').removeClass('text-active')
+  
 }
+
 
 $('a.ul-li').click( function(e){
   var target = $( e.target );
   if($(target).hasClass('text-default') ){
-    setOtherDefault()
-    changeToActive()
+    setOthersDefault()
+    changeToActive(target)
    
   }else if ($(target).hasClass('text-active')){
-    setOtherDefault()
-    changeToDefault(target)
+    if(target != target){
+      setOthersDefault()
+      changeToDefault(target) 
+    }
     
   }
 })
