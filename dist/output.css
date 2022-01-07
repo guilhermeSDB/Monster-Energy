@@ -423,8 +423,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.top-\[1132px\] {
+  top: 1132px;
+}
+
+.left-10 {
+  left: 2.5rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.my-52 {
+  margin-top: 13rem;
+  margin-bottom: 13rem;
 }
 
 .flex {
@@ -439,16 +460,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-screen {
   height: 100vh;
 }
 
-.w-full {
-  width: 100%;
+.h-full {
+  height: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .w-44 {
@@ -457,6 +478,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-36 {
   width: 9rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .grid-cols-1 {
@@ -481,6 +514,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .self-center {
   align-self: center;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .bg-\[\#030303\] {
@@ -538,12 +575,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .uppercase {
@@ -597,6 +643,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-default {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
@@ -605,6 +653,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .textMain{
   font-family: 'Poppins', sans-serif;
+}
+
+.verde {
+  --tw-text-opacity: 1;
+  color: rgb(140 198 63 / var(--tw-text-opacity));
 }
 
 #aboutDrink::after{
@@ -617,18 +670,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 5px;
   border-radius: 5px;
 }
-
-/* 
-#monsterEnergy::before{
-    content: "";
-    width: 10rem;
-    height: 3rem;
-    background-image: url(src/images/monster1-icon.png);
-    background-repeat: no-repeat;
-    background-size: 7rem;
-    display: inline-block;
-    
-} */
 
 .dotnav {
   display: block;
@@ -652,9 +693,143 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: #8cc63f;
 }
 
+/* width */
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px ;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #8cc63f;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4c7418;
+}
+
+section #subTitle{
+  font-weight: 800;
+  text-align: center;
+  position: relative;
+  font-size: 10.714em;
+  line-height: 1;
+  display: block;
+  color: rgba(160,160,160,.47);
+  mix-blend-mode: hard-light;
+  white-space: pre;
+  text-transform: uppercase;
+  -webkit-mask-image: linear-gradient(to top,rgba(255,255,255,0) 16%,rgba(254,255,255,.95) 60%);
+}
+
+#subTitle::before{
+  width: 800px;
+  height: 3px;
+  top: 109%;
+  left: 50%;
+  margin-left: -400px;
+  content: "";
+  position: absolute;
+  background: #8cc63f;
+  margin-top: -1px;
+}
+
+body,html  {
+  background-color: #000;
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.scroll-downs {
+  position: absolute;
+  top: 40rem;
+  right: 0;
+  bottom: 0;
+  left: 80rem;
+  margin: auto;
+  width :34px;
+  height: 55px;
+}
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+          animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+
 .hover\:text-\[\#8cc63f\]:hover {
   --tw-text-opacity: 1;
   color: rgb(140 198 63 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -667,12 +842,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: flex;
   }
 
-  .lg\:h-\[40rem\] {
-    height: 40rem;
+  .lg\:h-\[38rem\] {
+    height: 38rem;
   }
 
-  .lg\:w-\[20rem\] {
-    width: 20rem;
+  .lg\:w-\[100\%\] {
+    width: 100%;
   }
 
   .lg\:grid-cols-3 {

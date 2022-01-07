@@ -23,7 +23,7 @@
     <title>Monster Energy</title>
 </head>
 
-<body class="bg-[#030303]">
+<body class="bg-[#030303] overflow-x-hidden">
     <div class="w-screen h-screen text-white textMain">
         <header class="flex justify-between px-10 lg:py-6 lg:px-20 items-center ">
             <nav class="flex items-center ">
@@ -47,8 +47,8 @@
         </header>
 
         <main>
-            <div class="grid grid-cols-1 lg:grid-cols-3 h-full lg:my-6 m-auto">
-                <div class="p-10 flex content-center">
+            <div class="grid grid-cols-1 lg:grid-cols-3 w-screen h-full lg:my-6 m-auto">
+                <div class="p-10 flex content-center max-w-full">
                     <div class="m-auto lg:pl-20 2xl:pl-60">
                         <h1 id="NamePosition" class="text-5xl uppercase tracking-widest font-bold">
                         </h1>
@@ -58,16 +58,29 @@
                 </div>
                 <div class="p-auto flex content-center">
                     <div class="flex self-center m-auto">
-                        <img id="ImagePosition" class="w-36 lg:w-[20rem] lg:h-[40rem]" src="/src/images/monster1.png"
+                        <img id="ImagePosition" class=" w-36 lg:w-[100%] lg:h-[38rem]" src="/src/images/monster1.png"
                             alt="" />
                     </div>
                 </div>
                 <div class="hidden lg:flex">
                     <div id="buttonsText" class="m-auto uppercase lg:pb-40">
-                        <p> <a id="monsterEnergy" class="ul-li text-active" href="">Monster Energy</a>
+                        <p>
+                            <a id="monsterEnergy" class="ul-li text-active" href="">Monster Energy</a>
                             <a id="loCarb" class="ul-li text-default" href="">lo-carb</a>
                             <a id="absolutelyZero" class="ul-li text-default" href="">absolutely zero</a>
                         </p>
+                        <p>
+                            <a id="juiceKhaos" class="ul-li text-default" href="">Juice Khaos</a>
+                            <a id="pacificPunch" class="ul-li text-default" href="">Juice Pacific
+                                Punch</a>
+                            <a id="mango" class="ul-li text-default" href="">Juice Mango
+                                Locoo</a>
+                        </p>
+                    </div>
+                    <div class="hidden lg:flex scroll-downs">
+                        <div class="mousey">
+                            <div class="scroller"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,9 +95,19 @@
                     <div class="dot" title="helloup"></div>
                 </div>
                 <a onclick="show_image('right')" href="#"><i
-                        class="fas fa-chevron-right text-3xl text-gray-300"></i></a>
+                        class="fas fa-chevron-right text-5xl text-gray-300"></i></a>
             </div>
+
         </main>
+
+        <section class="w-full h-full">
+            <div class="hidden md:block">
+                <h2 id="subTitle" class="verde text-3xl text-center my-52">Monster</h2>
+                <span
+                    class="verde absolute z-10 font-extrabold text-6xl text-center w-[100%] uppercase top-[1132px] left-10">Escolhendo
+                    seu</span>
+            </div>
+        </section>
     </div>
 
     <!-- Import Jquery -->

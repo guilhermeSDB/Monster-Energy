@@ -13,11 +13,15 @@
     }
 
     .text-default{
-        @apply text-gray-600 text-lg
+        @apply text-gray-600 text-lg px-5
     }
 
     .textMain{
         font-family: 'Poppins', sans-serif;
+    }
+
+    .verde{
+        @apply text-[#8cc63f]
     }
   }
 
@@ -32,17 +36,6 @@
     height: 5px;
     border-radius: 5px;
 }
-/* 
-#monsterEnergy::before{
-    content: "";
-    width: 10rem;
-    height: 3rem;
-    background-image: url(src/images/monster1-icon.png);
-    background-repeat: no-repeat;
-    background-size: 7rem;
-    display: inline-block;
-    
-} */
 
 .dotnav {
     display: block;
@@ -64,5 +57,96 @@
 .active {
     background-color: #8cc63f;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 9px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px ; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8cc63f; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4c7418; 
+  }
+
+section #subTitle{
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    font-size: 10.714em;
+    line-height: 1;
+    display: block;
+    color: rgba(160,160,160,.47);
+    mix-blend-mode: hard-light;
+    white-space: pre;
+    text-transform: uppercase;
+    -webkit-mask-image: linear-gradient(to top,rgba(255,255,255,0) 16%,rgba(254,255,255,.95) 60%);
+}
+
+
+#subTitle::before{
+width: 800px;
+height: 3px;
+top: 109%;
+left: 50%;
+margin-left: -400px;
+content: "";
+position: absolute;
+background: #8cc63f;
+margin-top: -1px;
+}
+
+body,html  {
+    background-color: #000;
+    width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .scroll-downs {
+    position: absolute;
+    top: 40rem;
+    right: 0;
+    bottom: 0;
+    left: 80rem;
+    margin: auto;
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
 
 
