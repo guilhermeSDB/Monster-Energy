@@ -427,12 +427,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
 }
 
-.top-\[1132px\] {
-  top: 1132px;
+.relative {
+  position: relative;
 }
 
-.left-10 {
-  left: 2.5rem;
+.top-7 {
+  top: 1.75rem;
 }
 
 .z-10 {
@@ -443,9 +443,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: auto;
 }
 
-.my-52 {
-  margin-top: 13rem;
-  margin-bottom: 13rem;
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .flex {
@@ -480,16 +480,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 9rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-\[100\%\] {
   width: 100%;
 }
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-screen-sm {
+  max-width: 640px;
 }
 
 .grid-cols-1 {
@@ -573,11 +573,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .font-bold {
@@ -733,16 +728,10 @@ section #subTitle{
   -webkit-mask-image: linear-gradient(to top,rgba(255,255,255,0) 16%,rgba(254,255,255,.95) 60%);
 }
 
-#subTitle::before{
-  width: 800px;
-  height: 3px;
-  top: 109%;
-  left: 50%;
-  margin-left: -400px;
-  content: "";
-  position: absolute;
-  background: #8cc63f;
-  margin-top: -1px;
+@media (min-width: 700px) {
+  section #subTitle{
+    font-size: 3.714em;
+  }
 }
 
 body,html  {
@@ -827,8 +816,17 @@ body,html  {
 }
 
 @media (min-width: 768px) {
-  .md\:block {
-    display: block;
+  .md\:top-\[1132px\] {
+    top: 1132px;
+  }
+
+  .md\:left-10 {
+    left: 2.5rem;
+  }
+
+  .md\:my-52 {
+    margin-top: 13rem;
+    margin-bottom: 13rem;
   }
 }
 
@@ -875,6 +873,11 @@ body,html  {
 
   .lg\:pb-40 {
     padding-bottom: 10rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 

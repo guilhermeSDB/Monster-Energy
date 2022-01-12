@@ -95,16 +95,12 @@ section #subTitle{
 }
 
 
-#subTitle::before{
-width: 800px;
-height: 3px;
-top: 109%;
-left: 50%;
-margin-left: -400px;
-content: "";
-position: absolute;
-background: #8cc63f;
-margin-top: -1px;
+
+
+@media (min-width: 700px) {
+  section #subTitle{
+    font-size: 3.714em;
+  }
 }
 
 body,html  {
