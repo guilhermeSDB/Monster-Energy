@@ -1,30 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+ul li{
+  text-transform: uppercase;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+
+ul li:hover{
+  color: #8cc63f
+}
 
 
-@layer utilities {
-    .ul-li{
-       @apply uppercase px-2 hover:text-[#8cc63f]
-    }
 
-    .text-active{
-        @apply text-white text-xl 
-    }
 
-    .text-default{
-        @apply text-gray-600 text-lg px-5
-    }
+.ul-li{
+  text-transform: uppercase;
+  padding: 0 1rem;
+  font-size: 1.3rem;
+}
 
-    .textMain{
-        font-family: 'Poppins', sans-serif;
-    }
+.ul-li:hover{
+  color: #8cc63f
+}
 
-    .verde{
-        @apply text-[#8cc63f]
-    }
-  }
-
+div #buttonsText a{
+  display: block;
+}
 
 #aboutDrink::after{
     content:'';
@@ -82,7 +81,6 @@
 
 section #subTitle{
     font-weight: 800;
-    text-align: center;
     position: relative;
     font-size: 10.714em;
     line-height: 1;
@@ -95,11 +93,9 @@ section #subTitle{
 }
 
 
-
-
-@media (min-width: 700px) {
+@media (max-width: 800px) {
   section #subTitle{
-    font-size: 3.714em;
+    font-size: 4em;
   }
 }
 

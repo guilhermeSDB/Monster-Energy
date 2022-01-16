@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -8,19 +8,39 @@
     <link rel="shortcut icon"
         href="https://americanburrito.com/wp-content/uploads/2021/03/Monster-energy-logo-on-white-1.png" />
 
-    <!-- Imports Style -->
-
-    <link rel="stylesheet" href="dist/output.css">
+    <!-- Imports Style && Fonts -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Imports Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
 
-    <!-- Import Font-awesome  -->
+    <!-- Import Font-awesome && Tailwind -->
     <script src="https://kit.fontawesome.com/ec078606de.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>Monster Energy</title>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            
+            .text-active {
+                @apply text-white text-xl
+            }
+
+            .text-default {
+                @apply text-gray-600 text-lg px-5
+            }
+
+            .textMain {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            .verde {
+                @apply text-[#8cc63f];
+            }
+        }
+    </style>
+
 </head>
 
 <body class="bg-[#030303] overflow-x-hidden">
@@ -31,13 +51,13 @@
                     src="https://marvel-b1-cdn.bc0a.com/f00000000104050/www.monsterenergy.com/media/uploads_image/2016/06/22/auto/400/d9da88f7426182938b0cca0e3e8fc05c.png?mod=v1_c863764535e9284ff34f366929dbf8ab"
                     alt="" />
                 <ul class="hidden lg:flex content-center">
-                    <li class="ul-li"> <a href="#">novidades</a> </li>
-                    <li class="ul-li text-[#8cc63f]"> <a href="#">produtos</a> </li>
-                    <li class="ul-li"> <a href="#">promoções</a> </li>
-                    <li class="ul-li"> <a href="#">eventos</a> </li>
-                    <li class="ul-li"> <a href="#">esportes</a> </li>
-                    <li class="ul-li"> <a href="#">musica</a> </li>
-                    <li class="ul-li"> <a href="#">games</a> </li>
+                    <li> <a href="#">novidades</a> </li>
+                    <li class="text-[#8cc63f]"> <a href="#">produtos</a> </li>
+                    <li> <a href="#">promoções</a> </li>
+                    <li> <a href="#">eventos</a> </li>
+                    <li> <a href="#">esportes</a> </li>
+                    <li> <a href="#">musica</a> </li>
+                    <li> <a href="#">games</a> </li>
                 </ul>
             </nav>
             <div>
@@ -47,13 +67,14 @@
         </header>
 
         <main>
-            <div class="grid grid-cols-1 lg:grid-cols-3 w-screen h-full lg:my-6 m-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-3 w-screen h-full lg:my-20 m-auto">
                 <div class="p-10 flex content-center max-w-full">
                     <div class="m-auto lg:pl-20 2xl:pl-60">
-                        <h1 id="NamePosition" class="text-5xl uppercase tracking-widest font-bold">
+                        <h1 id="NamePosition" class="text-6xl uppercase tracking-widest font-bold">
                         </h1>
-                        <p id="DescriptPosition" class="py-6 text-gray-400 tracking-tight font-medium"></p>
-                        <p id="aboutDrink" class="uppercase font-bold text-sm tracking-widest">Sobre a bebida</p>
+                        <p id="DescriptPosition" class="text-xl py-6 text-gray-400 tracking-tight font-medium"></p>
+                        <p id="aboutDrink" class="text-xl uppercase font-bold text-sm tracking-widest">Sobre a bebida
+                        </p>
                     </div>
                 </div>
                 <div class="p-auto flex content-center">
@@ -64,18 +85,17 @@
                 </div>
                 <div class="hidden lg:flex">
                     <div id="buttonsText" class="m-auto uppercase lg:pb-40">
-                        <p>
-                            <a id="monsterEnergy" class="ul-li text-active" href="">Monster Energy</a>
-                            <a id="loCarb" class="ul-li text-default" href="">lo-carb</a>
-                            <a id="absolutelyZero" class="ul-li text-default" href="">absolutely zero</a>
-                        </p>
-                        <p>
-                            <a id="juiceKhaos" class="ul-li text-default" href="">Juice Khaos</a>
-                            <a id="pacificPunch" class="ul-li text-default" href="">Juice Pacific
-                                Punch</a>
-                            <a id="mango" class="ul-li text-default" href="">Juice Mango
-                                Locoo</a>
-                        </p>
+
+                        <a id="monsterEnergy" class="ul-li text-active" href="">Monster Energy</a>
+                        <a id="loCarb" class="ul-li text-default" href="">lo-carb</a>
+                        <a id="absolutelyZero" class="ul-li text-default" href="">absolutely zero</a>
+
+                        <a id="juiceKhaos" class="ul-li text-default" href="">Juice Khaos</a>
+                        <a id="pacificPunch" class="ul-li text-default" href="">Juice Pacific
+                            Punch</a>
+                        <a id="mango" class="ul-li text-default" href="">Juice Mango
+                            Locoo</a>
+
                     </div>
                     <div class="hidden lg:flex scroll-downs">
                         <div class="mousey">
@@ -100,11 +120,11 @@
             </div>
 
 
-            <section class="max-w-screen-sm h-full">
+            <section class="w-screen h-full">
                 <div class="relative content-center smd:block">
-                    <h2 id="subTitle" class="verde text-3xl text-center my-16 md:my-52 max-w-screen">Monster</h2>
-                    <span
-                        class="max-w-screen verde absolute z-10 font-extrabold text-1xl lg:text-5xl text-center w-[100%] uppercase top-7 md:top-[1132px] md:left-10">Escolhendo
+                    <h2 id="subTitle" class="verde text-center my-16 lg:my-52 w-screen">Monster</h2>
+                    <span id="titleChoose"
+                        class="verde z-10 flex justify-center relative font-extrabold text-1xl top-[-6rem] uppercase lg:text-7xl lg:top-[-17rem]">Escolhendo
                         seu</span>
                 </div>
                 <div>
