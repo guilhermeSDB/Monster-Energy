@@ -137,5 +137,26 @@ body,html  {
     10% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(15px); opacity: 0;}
   }
+.cardChoose{
+  transform-style: preserve-3d;
+  }
 
+.cardChoose::after{
+  content: '';
+  border-radius: 1rem;
+  width: 100%;
+  height: 15rem;
+  top: 0rem;
+  left: 0rem;
+  background: #1A1A1A;
+  position: absolute;
+  z-index: -1;
+  transition: 0.4s;
+ 
+}
 
+.cardChoose:hover:after{
+  top: -.8rem;
+  left: -.8rem;
+  
+}
