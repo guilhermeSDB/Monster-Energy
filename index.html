@@ -17,6 +17,7 @@
     <!-- Import Font-awesome && Tailwind -->
     <script src="https://kit.fontawesome.com/ec078606de.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Monster Energy</title>
 
@@ -97,14 +98,11 @@
                             Locoo</a>
 
                     </div>
-                    <div class="hidden lg:flex scroll-downs">
-                        <div class="mousey">
-                            <div class="scroller"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <div class="pb-10 pt-2 lg:py-0 text-center flex items-center justify-center">
+
+            <!-- Inicio Dots -->
+            <div class=" pb-10 pt-2 text-center flex items-center justify-center lg:py-0 lg:hidden">
                 <a onclick="show_image('left')" href="#">
                     <i class="fas fa-chevron-left text-3xl text-gray-300"></i></a>
                 <div class="dotnav px-10">
@@ -118,17 +116,27 @@
                 <a onclick="show_image('right')" href="#"><i
                         class="fas fa-chevron-right text-3xl text-gray-300"></i></a>
             </div>
+            <!-- Fim Dots -->
 
+            <!-- Inicio Mouse Scroll Down -->
+            <div class="w-full relative mt-16 lg:mt-40">
+                <div class="hidden lg:flex scroll-downs">
+                    <div class="mousey">
+                        <div class="scroller"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Mouse Scroll Down -->
 
-            <section class="w-screen h-full">
-                <div class="relative content-center smd:block">
-                    <h2 id="subTitle" class="verde text-center my-16 lg:my-52 w-screen">Monster</h2>
+            <section class="w-screen h-full lg:pt-6">
+                <div class="relative content-center md:block" data-aos="fade-down" data-aos-duration="1000">
+                    <h2 id="subTitle" class="verde text-center mb-16 lg:my-52 w-screen">Monster</h2>
                     <span id="titleChoose"
                         class="verde z-10 flex justify-center relative font-extrabold text-1xl top-[-6rem] uppercase lg:text-7xl lg:top-[-17rem]">Escolhendo
                         seu</span>
                 </div>
                 <div>
-
+                    
                 </div>
             </section>
 
@@ -141,6 +149,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

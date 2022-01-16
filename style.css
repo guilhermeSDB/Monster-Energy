@@ -8,9 +8,6 @@ ul li:hover{
   color: #8cc63f
 }
 
-
-
-
 .ul-li{
   text-transform: uppercase;
   padding: 0 1rem;
@@ -85,11 +82,11 @@ section #subTitle{
     font-size: 10.714em;
     line-height: 1;
     display: block;
-    color: rgba(160,160,160,.47);
+    color: rgba(70, 70, 70, 0.47)!important;
     mix-blend-mode: hard-light;
     white-space: pre;
     text-transform: uppercase;
-    -webkit-mask-image: linear-gradient(to top,rgba(255,255,255,0) 16%,rgba(254,255,255,.95) 60%);
+    -webkit-mask-image: linear-gradient(to top,rgba(255,255,255,0) 16%,rgba(254,255,255,.95) 60%)!important;
 }
 
 
@@ -108,10 +105,10 @@ body,html  {
   }
   .scroll-downs {
     position: absolute;
-    top: 40rem;
+    top: 0;
     right: 0;
     bottom: 0;
-    left: 80rem;
+    left: 0;
     margin: auto;
     width :34px;
     height: 55px;
