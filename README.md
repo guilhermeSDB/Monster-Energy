@@ -1,6 +1,6 @@
 # Redesign Monster Energy!
 
-Redesign da pagina de Energeticos da Monster Energy, me siga para obter mais novidades:
+Redesign da pagina de Energeticos da Monster Energy
 
 [
 ![enter image description here](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)  
