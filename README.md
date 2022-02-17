@@ -1,4 +1,5 @@
 # Redesign Monster Energy
+## Landing Page
 
 <a href="https://guilhermesdb.github.io/Monster-Energy-Redesign-Tailwindcss/" target="_blank"><img src="https://thumbs2.imgbox.com/b5/07/olDgKcvY_t.png" alt="image host"/></a> 
 
