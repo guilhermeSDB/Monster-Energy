@@ -1,25 +1,34 @@
-# Redesign Monster Energy!
+# Redesign Monster Energy
 
-Redesign da pagina de Energeticos da Monster Energy
+<a href="https://guilhermesdb.github.io/Monster-Energy-Redesign-Tailwindcss/" target="_blank"><img src="https://thumbs2.imgbox.com/b5/07/olDgKcvY_t.png" alt="image host"/></a> 
 
-[
-![enter image description here](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)  
-](https://www.linkedin.com/in/guilhermesb/)[![enter image description here](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://github.com/guilhermeSDB)
+> Apaixonado pelos Energéticos da Monster decidi refazer a pagina de Energéticos deles, com um visual mais recente e moderno.
 
+### Ajustes e melhorias
 
-# Linguagens
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-![enter image description here](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)   
-![enter image description here](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)   
-![enter image description here](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)   
+- [ ] Novas Seções
 
+## 🚀 Instalando Monster Energy
 
+Para instalar o Monster Energy, siga estas etapas:
 
-## Frameworks
-[
-![enter image description here](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)  
-](https://api.jquery.com/)[![enter image description here](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)  
-](https://tailwindcss.com/)
+Windows, Linux e macOS:
+```bash
+git clone https://github.com/guilhermeSDB/Monster-Energy-Redesign-Tailwindcss.git
+```
 
+## ☕ Usando Monster Energy
 
-[![wakatime](https://wakatime.com/badge/user/e4b5843b-76bd-42c9-b114-a18aa1cd2e83/project/b3729c2b-cede-461e-956b-a9d892eeb43e.svg)](https://wakatime.com/badge/user/e4b5843b-76bd-42c9-b114-a18aa1cd2e83/project/b3729c2b-cede-461e-956b-a9d892eeb43e)
+Para usar Monster Energy, siga esta etapa:
+
+Apenas abra o index.html 
+
+ou veja a [Demonstração](https://guilhermesdb.github.io/Monster-Energy-Redesign-Tailwindcss/)
+
+## 📝 Licença
+
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+
+[⬆ Voltar ao topo](#redesign-monster-energy)<br>
