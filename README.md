@@ -1,9 +1,10 @@
 # Redesign Monster Energy
-## Landing Page
 
-<a href="https://guilhermesdb.github.io/Monster-Energy-Redesign-Tailwindcss/" target="_blank"><img src="https://thumbs2.imgbox.com/b5/07/olDgKcvY_t.png" alt="image host"/></a> 
+<a href="https://guilhermesdb.github.io/Monster-Energy-Redesign-Tailwindcss/" target="_blank">
+  <img src="src/images/capa.png" alt="image host"/>
+</a> 
 
-> Apaixonado pelos Energéticos da Monster decidi refazer a pagina de Energéticos deles, com um visual mais recente e moderno.
+> Apaixonado pelos Energéticos da Monster decidi redesenhar a landing page deles, com um visual mais recente e moderno.
 
 ### Ajustes e melhorias
 
@@ -11,22 +12,30 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [ ] Novas Seções
 
-## 🚀 Instalando Monster Energy
+### [Ver Preview](https://guilhermesdb.github.io/Monster-Energy-Redesign-Tailwindcss/)
 
-Para instalar o Monster Energy, siga estas etapas:
+## 👨🏻‍💻 Techs 
 
-Windows, Linux e macOS:
-```bash
-git clone https://github.com/guilhermeSDB/Monster-Energy-Redesign-Tailwindcss.git
-```
+ <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,tailwindcss,javascript" />
+</a>
 
-## ☕ Usando Monster Energy
+## 🤝 Colaboradores
 
-Para usar Monster Energy, siga esta etapa:
+Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
-Apenas abra o index.html 
-
-ou veja a [Demonstração](https://guilhermesdb.github.io/Monster-Energy-Redesign-Tailwindcss/)
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/66280834?v=4" width="100px;" alt="Foto de Guilherme Barros no GitHub"/><br>
+        <sub>
+          <b>Guilherme S Barros</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## 📝 Licença
 
