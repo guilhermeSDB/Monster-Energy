@@ -12,7 +12,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [ ] Novas Seções
 
-### [Ver Preview](https://guilhermesdb.github.io/Monster-Energy-Redesign-Tailwindcss/)
+### [Ver Preview](https://guilhermesdb.github.io/Monster-Energy/)
 
 ## 👨🏻‍💻 Techs 
 
